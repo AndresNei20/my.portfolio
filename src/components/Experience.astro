@@ -1,0 +1,36 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Febrero 2024",
+    title: "Diseñador de Piezas Visuales",
+    company: "Happy&Soft",
+    description:
+      "Responsable de crear piezas gráficas, empaques y colaboración en el apartado de marketing de la marca buscando mayor visibilidad.",
+  },
+  {
+    date: "Septiembre - Diciembre 2023",
+    title: "Monitor de Diseñando con Algoritmos",
+    company: "Universidad Icesi",
+    description:
+      "Responsable dar acompañamiento y ayuda a los estudiantes para comprender la importancia de los algoritmos, la lógica y las buenas practicas al momento de desarrollar aplicaciones web.",
+  },
+  {
+    date: "Marzo - Junio 2023",
+    title: "Lider del Equipo de Desarrollo",
+    company: "TEApoyamos",
+    description:
+      "Responsable de guiar el equipo de desarrollo mediante herramientas de código y gestion de contenido a partir del proceso otorgado por los equipos UI & UX con el fin de llegar a un prototipo de alta fidelidad para el cliente.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
